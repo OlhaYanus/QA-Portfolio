@@ -1,0 +1,79 @@
+1. We have a table Calculator with columns: 
+
+(
+ Id number, 
+ PId number, 
+ Ca_Vid_Id number, 
+ CA_ACTIVE char(1),  -- Active - Y, Not Active - N  
+ Name varchar2(500), 
+ Value varchar2(500)
+)
+
+- Task: Select all active calculators with Ca_Vid_Id = 1;
+	Command:
+SELECT *
+FROM Calculator
+WHERE Ca_Vid_Id = 1 AND CA_ACTIVE = ‘Y’;
+
+2. We have a table agreement with columns:
+
+( 
+  id number -- id of entity (agreement/ add. agreement)  
+  pId number -- id of agreement for add. agreement
+  dateCreate date                -- date of creation
+  premium number                 -- bonus for agreement
+)
+
+- Task: Select all agreements that contain add. agreements created since 01.12.2020;
+	Command:
+SELECT DISTINCT a.*
+FROM agreement a
+JOIN agreement add_ag ON a.id = add_ag.pId
+WHERE add_ag.dateCreate >= ‘2020-12-01’;
+
+- Task: Count the sum of premium for all agreements since 01.12.2020;
+	Command:
+​​SELECT SUM(premium) AS total_premium
+FROM agreement
+WHERE dateCreate >= ‘2020-12-01’;
+
+
+- Task: Count the number of agreements with a premium of more than $1000 and created after 01.12.2020;
+	Command:
+SELECT COUNT(*) AS agreements_count
+FROM agreement
+WHERE premium > 1000 AND dateCreate >= ‘2020-12-01’;
+
+
+
+3. Select all users whose email does not end with @gmail.com.
+	Command:
+SELECT username
+FROM users
+WHERE email NOT LIKE '%@gmail.com';
+
+4. Select all articles that were written by user 1test and created between 2020-07-5 and 2020-07-7 (included), and order by a descending created date.
+	Command:
+SELECT a.*, u.username
+FROM article a
+JOIN userprofile up ON a.author_id = u.id
+JOIN users u ON a.author_id = up.id
+WHERE u.username = '1test'
+AND DATE (a.createdAT) BETWEEN '2020-07-05' AND '2020-07-07'
+ORDER BY a.createdAt DESC;
+
+5. Select the usernames of users and the number of articles written by these users.
+	Command:
+SELECT u.username, COUNT(a.id) AS articles_coumt
+FROM users u
+JOIN userprofile up ON u.id = up.user_id
+LEFT JOIN article a ON a.author_id = up.id
+GROUP BY u.username;
+
+6. Select all users who have favorite articles. Print username and article_title columns.
+	Command:
+SELECT u.username, a.title AS article_title
+FROM favoritor_assoc f
+JOIN usersprofile up ON f.favoriter = u.id
+JOIN users u ON up.user_id = u.id
+JOIN article a ON f.favorited_article = a.id;
