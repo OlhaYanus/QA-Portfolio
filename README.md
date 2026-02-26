@@ -2,7 +2,7 @@
 About Practical testing projects including web and mobile applications, test plans, test cases, checklists, bug reports, and Postman collections. Demonstrates hands-on QA skills in manual, API, and mobile testing.
 
 Projects
-1. Huntd.tech – Web & Mobile Application Testing
+#**1. Huntd.tech – Web & Mobile Application Testing**
 Tools / Docs: Jira, Documentation
 Description: Comprehensive job search and application tracking platform for job seekers and recruiters.
 Key Activities & Responsibilities:
@@ -13,7 +13,8 @@ Developed RTM (Requirements Traceability Matrix) to ensure full coverage
 Prepared permission tables and documented access rights
 Applied decomposition techniques to break down requirements into testable units
 Skills / Tools: Manual Testing, Web/Mobile Testing, Test Documentation, RTM, Jira, Chrome DevTools
-2. Handyman – Mobile Testing
+
+#**2. Handyman – Mobile Testing**
 Tools / Docs: Jira
 Description: Handyman is a mobile application for requesting and managing handyman services. Users can book services, track requests, and communicate with service providers on Android and iOS devices.
 Key Activities & Responsibilities:
@@ -25,7 +26,8 @@ Captured relevant Logcat logs and videos demonstrating bug reproduction
 Linked bug reports to user stories in Jira for traceability
 Applied manual mobile testing techniques including functional and exploratory testing
 Skills / Tools: Mobile Testing, Android Studio, Logcat, Jira, Bug Reporting, Test Documentation
-3. IMDb – Mobile Testing
+
+#**3. IMDb – Mobile Testing**
 Tools / Docs: Jira
 Description: IMDb is a mobile application for browsing and reviewing movies, TV shows, and actors. Users can search titles, read reviews, and track favorites on Android and iOS devices.
 Key Activities & Responsibilities:
@@ -37,7 +39,8 @@ Linked all bug reports to Jira stories, maintaining traceability
 Captured screenshots and recordings for bug evidence
 Maintained Jira tickets according to mentor feedback and QA best practices
 Skills / Tools: Mobile Testing, Genymotion, Jira, Bug Reporting, Test Documentation, Checklist-based Testing
-4. Evernote – Mobile Testing
+
+#**4. Evernote – Mobile Testing**
 Tools / Docs: Jira
 Description: Evernote is a note-taking and organization app available on Android and iOS. Users can create, edit, and organize notes, attach files, and synchronize content across devices.
 Key Activities & Responsibilities:
@@ -50,7 +53,8 @@ Recorded app interactions for better bug evidence
 Reported bugs in Jira and linked them to stories
 Maintained Jira tickets according to QA best practices
 Skills / Tools: Mobile Testing, Jira, Bug Reporting, Checklist-based Testing, CPU/Battery Monitoring, Test Documentation
-5. Conduit – Web & API Testing
+
+#**5. Conduit – Web & API Testing **
 Tools / Docs: Jira, Postman, Documentation
 Description: Conduit is an open-source web application for learning software development and testing skills. Core functionality includes registration, posting and reading articles, liking, commenting, and following users.
 Key Activities & Responsibilities:
@@ -62,7 +66,8 @@ Prepared test data before execution to maintain consistency across test runs
 Completed checklists and cheat sheets for structured testing
 Shared Postman collection link for team use
 Skills / Tools: API Testing, Postman, Test Data Management, Smoke/Regression Testing, Test Documentation, Pre-request Scripts
-6. JPetStore – Web Testing
+
+#**6. JPetStore – Web Testing**
 Tools / Docs: Documentation
 Description: JPetStore is a sample e-commerce web application for managing and purchasing pet products. Users can browse categories, add items to the cart, and complete orders.
 Key Activities & Responsibilities:
