@@ -1,7 +1,8 @@
 # QA-Portfolio
 About Practical testing projects including web and mobile applications, test plans, test cases, checklists, bug reports, and Postman collections. Demonstrates hands-on QA skills in manual, API, and mobile testing.
 
-Projects
+**Projects**
+
 #**1. Huntd.tech – Web & Mobile Application Testing**
 Tools / Docs: Jira, Documentation
 Description: Comprehensive job search and application tracking platform for job seekers and recruiters.
